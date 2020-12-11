@@ -1,0 +1,3 @@
+title=face voting
+author=saikumar
+orientation=landscape

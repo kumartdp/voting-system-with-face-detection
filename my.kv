@@ -1,0 +1,163 @@
+<Container>:
+
+	name: user
+	add: address
+	
+	GridLayout:
+		cols:1
+		size:root.width-150,root.height-150
+		pos:100,100
+		
+		GridLayout:
+			cols:2
+			
+			Label:
+			    size_hint: (.2, None)
+                height: 30
+				text:"NAME"
+			
+			TextInput:
+				size_hint: (.2, None)
+                height: 30
+				id:user
+				multiline:False
+			Label:
+			    size_hint: (.2, None)
+                height: 30
+				text:"ADDRESS"
+			TextInput:
+			    size_hint: (.2, None)
+                height: 70
+				id:address
+				multiline:True
+		Button:
+			text:"submit"
+			size_hint: (.2, None)
+            height: 30
+			on_press:root.btn()
+<Container1>:
+
+	uid: uid
+	
+	
+	GridLayout:
+		cols:1
+		size:root.width-150,root.height-150
+		pos:100,100
+		
+		GridLayout:
+			cols:2
+			
+			Label:
+			    size_hint: (.2, None)
+                height: 30
+				text:"ENTER UID"
+			
+			TextInput:
+				size_hint: (.2, None)
+                height: 30
+				id:uid
+				multiline:False
+			
+		Button:
+			text:"submit"
+			size_hint: (.2, None)
+            height: 30
+			on_press:root.btn1()
+<Container2>:
+
+	
+	
+
+	
+	GridLayout:
+		cols:1
+		size:root.width-150,root.height-150
+		pos:100,100
+		
+		GridLayout:
+			cols:3
+			
+			Image:
+				source:'tdp.png'
+			
+			Label:
+			    size_hint: (.2, None)
+                height: 30
+				text:"TDP"
+
+			
+			Button:
+				text:"vote"
+				size_hint: (.2, None)
+				height: 30
+				on_press:root.tdp()
+			Image:
+				source:'ycp.jpg'
+				
+			Label:
+			    size_hint: (.2, None)
+                height: 30
+				text:"ycp"
+			Button:
+				text:"vote"
+				size_hint: (.2, None)
+				height: 30
+				on_press:root.ycp()
+			Image:
+				source:'jsp.png'
+			Label:
+			    size_hint: (.2, None)
+                height: 30
+				text:"janasena"
+			
+			Button:
+				text:"vote"
+				size_hint: (.2, None)
+				height: 30
+				on_press:root.jsp()
+				
+		
+<Container3>:
+
+	
+	
+
+	
+	GridLayout:
+		cols:1
+		size:root.width-150,root.height-150
+		pos:100,100
+		
+		GridLayout:
+			cols:3
+			
+			
+			
+			Label:
+			    size_hint: (.2, None)
+                height: 30
+				text:"YOU HAVE ALREADY COMPLETED VOTING"
+			
+		
+<Container4>:
+
+	
+	
+
+	
+	GridLayout:
+		cols:1
+		size:root.width-150,root.height-150
+		pos:100,100
+		
+		GridLayout:
+			cols:3
+			
+			
+			
+			Label:
+			    size_hint: (.2, None)
+                height: 30
+				text:"!!! SORRY YOUR FACE DO NOT MATCH WITH THE REGISTERED FACE"			
+		
